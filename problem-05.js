@@ -17,12 +17,10 @@ function analyzeText(str) {
             continue
         }
         token++;
-    } // console.log(token);
-    return {
-        "longestWords": longestWords,
-        "token": token
     }
+
+    return { longestWords: longestWords, token: token }
 }
 
-let output= analyzeText("Keep coding keep shining")
-console.log(output);
+// let output= analyzeText("Keep coding keep shining")
+// console.log(output);
