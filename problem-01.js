@@ -2,7 +2,7 @@
 function newPrice(currentPrice , discount ) {
     let discountAmount = (currentPrice * discount) / 100;
     let discountPrize = currentPrice - discountAmount;
-    if (typeof currentPrice !== Number || typeof discount !== number) {
+    if (typeof currentPrice !== "number" || typeof discount !== "number" ) {
         return "Invalid";
     }
     if (discount <= 0 && discount >= 100) {
